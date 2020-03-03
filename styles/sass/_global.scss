@@ -1,0 +1,114 @@
+// GLOBAL VARIABLES
+
+$fontBase: 'Montserrat', sans-serif;
+$fontBody: 'Open Sans', sans-serif;
+$bgcGreen:#C3DAB7;
+$sectionPadding: 100px 0;
+
+* {
+    border: 1px solid red;
+}
+
+/* smooth scroll and default font size set */
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-width: 350px;
+    font-size: 1.4rem;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    font-family: $fontBody;
+}
+
+/* default wrapper - DO NOT CHANGE */
+.wrapper {
+    width: 80%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* removes default padding and margins*/
+ul,
+li,
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* removes list style bullets */
+li {list-style: none;}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* removes default border and color */
+button {
+    background-color: inherit;
+    font-family: inherit;
+}
+
+button,
+fieldset {border: none;}
+
+address {font-style: normal;}
+
+/* FONT STUFF */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {font-family: $fontBase}
+
+p {font-family: $fontBody}
+
+/* ALL uppercase text */
+.logo,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header nav,
+.bar {
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 3.7rem;
+    letter-spacing: 0.9px;
+}
+
+h2 {
+    padding-bottom: 30px;
+    border-bottom: 1px solid grey;
+    margin-bottom: 50px;
+}
+
+h4 {
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.overview {
+    background-color: $bgcGreen
+}

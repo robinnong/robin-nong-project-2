@@ -1,0 +1,53 @@
+header {
+    padding-top: 30px;
+    position: relative;
+        nav {
+            width: 100%;
+            height: auto;
+            position: relative;
+    }
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+        div {
+            display: flex;    
+        }
+        li {
+            padding: 0 15px;
+            font-family: $fontBase
+        }
+        i {
+            font-size: 2rem;
+    }
+}
+
+.logo {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    width: 200px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: calc(50% - 100px);
+    left: calc(50% - 100px);
+}
+
+.shopping-icon {
+    position: relative;
+        div {
+            font-size: 1rem;
+            position: absolute;
+            background-color: $bgcGreen;
+            right: 5px;
+            top: 10px;
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    }
+}
