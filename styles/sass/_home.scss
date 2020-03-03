@@ -47,16 +47,22 @@ header.home {
                 border-radius: 50%;
                 margin: 0 auto 30px auto;
             }
-            i {
+            button {
+                color: grey;
                 font-size: 2.8rem;
                 top: calc(50% - 1.4rem);
                 bottom: calc(50% - 1.4rem);
+                transition: all 0.2s;
             }
-            i:first-of-type {
+            button:focus,
+            button:hover {
+                color: black;
+            }
+            button:first-of-type {
                 position: absolute;
                 left: -100px;
             }
-            i:last-of-type {
+            button:last-of-type {
                 position: absolute;
                 right: -100px;
             }
@@ -78,7 +84,27 @@ header.home {
     li {
         width: 50%;
         margin: 20px 0;
+        display: flex;
     }
+    p {
+        color: grey;
+    }
+}
+
+.icon-container {
+    width: 50px;
+    height: 50px;
+    font-size: 2.2rem;
+    border: 1.5px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-text {
+    margin-left: 10px;
+    width: calc(100% - 50px - 10px);
 }
 
 .team-section {
@@ -88,13 +114,45 @@ header.home {
     }
 }
 
+.team-content {
+    display: flex;
+    flex-wrap: wrap;
+    div {
+        margin: 10px 10px;
+        height: 200px;
+    }
+}
+
+.txt-2,
+.team-img-container {
+    width: 200px;
+}
+
+.txt-1 {
+    width: 50%;
+    background-color: $bgcLight;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.txt-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    h4 {
+        text-align: center;
+        width: 80%;
+        margin: 0;
+    }
+}
+
 .portfolio-section {
     position: relative;
     display: flex;
     height: 500px;
-    h3 {
-        font-weight: 400;
-    }
 }
 
 .portfolio-wrapper {
@@ -114,7 +172,9 @@ header.home {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    position: absolute;
+    left: 0;
+    width: 40%;
     height: 100%;
     p {
         margin: 30px 0;

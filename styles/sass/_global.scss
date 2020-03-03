@@ -3,11 +3,8 @@
 $fontBase: 'Montserrat', sans-serif;
 $fontBody: 'Open Sans', sans-serif;
 $bgcGreen:#C3DAB7;
+$bgcLight: #F6F6F6;
 $sectionPadding: 100px 0;
-
-* {
-    border: 1px solid red;
-}
 
 /* smooth scroll and default font size set */
 html {
@@ -102,6 +99,11 @@ h2 {
     padding-bottom: 30px;
     border-bottom: 1px solid grey;
     margin-bottom: 50px;
+}
+
+h2,
+h3 {
+    font-weight: 400;
 }
 
 h4 {

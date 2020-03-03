@@ -10,13 +10,13 @@ header.blog-header {
     h1 {
         margin-bottom: 40px;
     }
-    section {
-        padding: $sectionPadding;
+    h2 {
+        font-weight: 700;
     }
 }
 
 article {
-    padding: 100px 0;
+    padding-top: 100px;
         nav {
             margin-bottom: 50px;
             span {
@@ -26,14 +26,14 @@ article {
         p:first-of-type {
             font-weight: 700;
     }
-} 
-
-.article-text {
-    padding: $sectionPadding;
-        p {
-        margin-bottom: 20px;
+    .social-links {
+        text-transform: uppercase;
+        font-size: 1.8rem;
+        a {
+            margin: 0 10px;
+        }
     }
-}
+} 
 
 // selects only headings in the article info bar 
 .article-info {
@@ -51,7 +51,7 @@ article {
     }
 }
 
-.author {
+.article-author {
     display: flex;
     align-items: center;
     width: 50%;
@@ -63,9 +63,18 @@ article {
     }
 }
 
+.article-text {
+    padding-top: 50px;
+        p {
+        margin-bottom: 20px;
+    }
+}
+
 .related-posts {
+    padding: 100px 0;
         ul {
             display: flex; 
+            height: 500px;
         }
         li {
             width: calc((100% - 2%) /3);
@@ -79,21 +88,39 @@ article {
 }
 
 .published-comments {
+    padding: 20px 0;
         li {
             display: flex;
             margin-bottom: 10px;
                 img {
-                    height: 50px;
-                    width: 50px;
-                    border-radius: 50%;
+                    height: 60px;
+                    width: 60px;
         }
+        p:first-of-type {
+            text-transform: uppercase;
+        }
+        p:last-of-type {
+            color: grey;
+            font-size: 1.2rem;
+        }
+    }
+    span {
+        color: green;
+        text-transform: initial;
+        font-style: italic;
     }
 }
 
 .comment-bubble {
     width: calc(100% - 50px - 4%);
     background-color: #F6F6F6;
-    height: 100px;
-    width: 600px;
+    padding: 20px;
     margin-left: 4%;
+}
+
+.comment-bubble::before {
+}
+
+.post-comment {
+    padding: 50px 0;
 }

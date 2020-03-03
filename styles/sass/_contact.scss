@@ -1,0 +1,40 @@
+.full-bleed-image-1 {
+    height: 200px;
+    background-image: url(../../assets/contact-1.jpeg);
+    background-size: cover;
+}
+
+.full-bleed-image-2 {
+    height: 500px;
+    background-image: url(../../assets/contact-2.jpeg);
+    background-size: cover;
+}
+
+main.contact {
+    position: relative;
+}
+
+.contact h1 {
+    position: absolute;
+    top: 150px;
+}
+
+.contact-details {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    i {
+        font-size: 3rem;
+    }
+}
+
+.contact-tiles {
+    display: flex;
+    li {
+        width: calc(100% /3);
+    }
+}
+
+.get-in-touch {
+    padding-top: 50px;
+    padding-bottom: 100px;
+}

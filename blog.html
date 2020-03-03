@@ -44,7 +44,7 @@
             <h1>How to Run a Creative Agency</h1>
             <nav>Home / Blog / <span>How to Run a Creative Agency</span></nav>
             <div class="article-info">
-                <div class="author">
+                <div class="article-author">
                     <img src="./assets/blog-2.jpeg" alt="">
                     <div class="author-text">
                         <p>Alex</p>
@@ -69,6 +69,18 @@
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis totam placeat labore officiis quas exercitationem quos quo doloribus autem ut illum minima, aspernatur earum nemo obcaecati tenetur culpa dolorem? Non similique accusantium inventore facilis blanditiis, aperiam corporis, sapiente iste dolorum vero nihil nemo voluptas debitis quisquam saepe, soluta modi dignissimos.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores error impedit eaque, illum laboriosam dolor! Fuga eveniet tempore velit nisi eos ad veritatis itaque vel vero magni quia aspernatur incidunt voluptatibus aut, natus in, libero enim. Assumenda qui quam enim in, provident obcaecati possimus neque unde, doloremque totam, optio id ab eum placeat. Est deleniti consequatur voluptatibus reprehenderit incidunt eos ullam officia, veniam tempora fuga, amet numquam assumenda sed nisi dolores? Odio reprehenderit exercitationem nam nihil quas, amet ad quasi atque corporis sequi aliquid eaque debitis rem quidem perspiciatis. Repudiandae ab quod facilis doloremque sint libero eveniet alias laudantium excepturi?</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate velit quasi obcaecati ea distinctio voluptas molestiae corrupti, doloremque voluptates doloribus amet quas deserunt aspernatur ducimus sit temporibus repellendus error harum quos tenetur. Fugit nostrum expedita aliquid autem, atque ratione aperiam pariatur facilis hic possimus labore id at voluptatum velit nemo, sunt non quibusdam praesentium, quia sequi et. Minus, voluptates rem? Facilis modi maiores eius voluptatem exercitationem illo iure, porro sequi iusto eum, dolor suscipit voluptate ea labore? Minima natus unde ad, autem mollitia doloribus minus doloremque inventore. Delectus iusto facilis quisquam magni aliquid nisi ducimus nemo earum necessitatibus, alias nihil.</p>
+                <div class="social-links">
+                    <span>Share:</span>
+                    <a href="" rel="external" aria-label="Click to share article to Facebook">
+                        <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                    </a>
+                    <a href="" rel="external" aria-label="Click to share article to Twitter">
+                        <i class="fab fa-twitter" aria-hidden="true"></i>
+                    </a>
+                    <a href="" rel="external" aria-label="Click to share article to Instagram">
+                        <i class="fab fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </div>
             </div>
         </article>
         <section class="related-posts">
@@ -94,37 +106,37 @@
                 <li>
                     <img src="./assets/blog-6.jpeg" alt="User profile photo">
                     <div class="comment-bubble">
-                        <p class="name"></p>
-                        <p class="comment"></p>
-                        <p class="post-date"></p>
+                        <p>Daniel Vandaft - <span class="reply">Reply</span></p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit minima deleniti dolore officiis provident quae.</p>
+                        <p>Jul 17, 2015 at 15 hours ago</p>
                     </div>
                 </li>
                 <li>
                     <img src="./assets/blog-7.jpeg" alt="User profile photo">
                     <div class="comment-bubble">
-                        <p class="name"></p>
-                        <p class="comment"></p>
-                        <p class="post-date"></p>
+                        <p class="name">Jennifer Loopz - <span class="reply">Reply</span></p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit minima deleniti dolore officiis provident quae.</p>
+                        <p>Jul 17, 2015 at 15 hours ago</p>
                     </div>
                 </li>
             </ul>
         </section>
         <section class="post-comment">
             <h2>Leave a Comment</h2>
-            <form action="" name="comment-form">
+            <form action="" name="comment-form" class="long-form">
                 <fieldset>
-                    <label for="name" class="visuallyHidden"></label>
+                    <label for="name" class="visuallyHidden">Name</label>
                     <input type="text" name="name" id="name" placeholder="Enter your name..." required>
-                    <label for="email" class="visuallyHidden"></label>
+                    <label for="email" class="visuallyHidden">E-mail</label>
                     <input type="email" name="email" id="email" placeholder="yourname@domain.com" required>
-                    <label for="subject" class="visuallyHidden"></label>
+                    <label for="subject" class="visuallyHidden">Subject</label>
                     <input type="text" name="subject" id="subject" placeholder="Subject (optional)">
                 </fieldset>
                 <fieldset>
-                    <label for="message" class="visibilityHidden"></label>
-                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Here goes your comment"></textarea>
+                    <label for="message" class="visibilityHidden">Message</label>
+                    <textarea name="message" id="message" maxlength="200"  placeholder="Here goes your comment"></textarea>
                 </fieldset>
-                <button type="submit">Send Comment</button>
+                <button type="submit">Submit Comment</button>
             </form>
         </section>
     </main>
@@ -171,7 +183,7 @@
             <div class="subscribe-now">
                 <h4>Subscribe Now</h4>
                 <p>Signup for emails and notifications below.</p>
-                <form action="">
+                <form action="" class="subscription-form" name="subscription-form">
                     <label for="email" class="visuallyHidden">E-mail</label>
                     <input type="email" name="email" id="email" placeholder="Enter your email">
                     <button type="submit" aria-label="Submit">🠖</button>
