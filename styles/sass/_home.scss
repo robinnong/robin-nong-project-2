@@ -90,16 +90,14 @@ header.home {
 
 .portfolio-section {
     position: relative;
-    height: 500px;
-}
-
-.flex {
     display: flex;
-    height: 100%;
-    width: 100%;
+    height: 500px;
+    h3 {
+        font-weight: 400;
+    }
 }
 
-.portfolio-txt-container {
+.portfolio-wrapper {
     width: 80%;
     margin: 0 auto;
     max-width: 1280px;
@@ -108,6 +106,26 @@ header.home {
     bottom: 0;
     right: 0;
     left: 0;
+}
+
+.portfolio-text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    p {
+        margin: 30px 0;
+    }
+}
+
+.view-button {
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 10px 15px;
+    background-color: white;
 }
 
 .text-background {

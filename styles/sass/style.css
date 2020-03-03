@@ -550,18 +550,17 @@ header.home {
 
 .portfolio-section {
   position: relative;
-  height: 500px;
-}
-
-.flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
-  width: 100%;
+  height: 500px;
 }
 
-.portfolio-txt-container {
+.portfolio-section h3 {
+  font-weight: 400;
+}
+
+.portfolio-wrapper {
   width: 80%;
   margin: 0 auto;
   max-width: 1280px;
@@ -570,6 +569,36 @@ header.home {
   bottom: 0;
   right: 0;
   left: 0;
+}
+
+.portfolio-text {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+.portfolio-text p {
+  margin: 30px 0;
+}
+
+.view-button {
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 10px 15px;
+  background-color: white;
 }
 
 .text-background {
@@ -742,15 +771,33 @@ address {
   margin-bottom: 20px;
 }
 
+.recent-posts h4 {
+  text-align: center;
+}
+
 .recent-posts li {
   list-style: initial;
   padding-bottom: 5px;
+}
+
+.subscribe-now {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .subscription-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 20px;
 }
 
 .subscription-form input {

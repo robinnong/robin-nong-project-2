@@ -25,9 +25,14 @@ address {
     margin-bottom: 20px;
 }
 
-.recent-posts li {
-    list-style: initial;
-    padding-bottom: 5px;
+.recent-posts {
+    h4 {
+        text-align: center;
+    }
+    li {
+        list-style: initial;
+        padding-bottom: 5px;
+    }
 }
 
 @mixin buttonSize {
@@ -35,8 +40,15 @@ address {
     height: 40px;
 }
 
+.subscribe-now {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
 .subscription-form {
     display: flex;
+    margin-top: 20px;
         input {
             padding: 0 15px;
             display: block; 
