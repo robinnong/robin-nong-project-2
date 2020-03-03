@@ -73,21 +73,51 @@ header.home {
 
 .services-content {
     width: 50%;
-}
-
-.portfolio-section {
     display: flex;
-        div {
-            height: 500px;
-            width: 50%;
-        }
-        div:first-of-type {
-            background-color: $bgcGreen;
+    flex-wrap: wrap;
+    li {
+        width: 50%;
+        margin: 20px 0;
     }
 }
 
+.team-section {
+    padding: 100px 0;
+    h2 {
+        text-align: center;
+    }
+}
 
+.portfolio-section {
+    position: relative;
+    height: 500px;
+}
 
+.flex {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
 
+.portfolio-txt-container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1280px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
 
+.text-background {
+    height: 100%;
+    width: 50%;
+    background-color: $bgcGreen;
+}
+
+.portfolio-img-container {
+    height: 100%;
+    width: 50%;
+}
 
