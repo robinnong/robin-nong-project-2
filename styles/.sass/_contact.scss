@@ -24,19 +24,19 @@
             margin-bottom: 20px;
         }
         p {
-            color: grey;
+            color: $fontMediumGrey;
     }
 }
 
 .full-bleed-image-1 {
     height: 200px;
-    background-image: url(../../assets/contact-1.jpeg);
+    background-image: url(../assets/contact-1.jpeg);
     background-size: cover;
 }
 
 .full-bleed-image-2 {
     height: 500px;
-    background-image: url(../../assets/contact-2.jpeg);
+    background-image: url(../assets/contact-2.jpeg);
     background-size: cover;
 }
 
@@ -63,7 +63,7 @@ h6 {
             padding-left: 50px;
         }
         li:not(:last-of-type) {
-            border-right: 1px solid grey;
+            border-right: $lightBorder;
     }
 }
 

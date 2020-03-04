@@ -1,0 +1,30 @@
+/* MEDIA QUERIES */
+/* for small laptop screens */
+
+/* for tablet screens */
+@media(max-width: 768px) {
+    .mobile-menu {
+        height: auto;
+        overflow: visible;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        justify-content: flex-start;
+        div {
+            flex-direction: column;
+        }
+    }
+}
+
+@media(max-width: 480px) {
+    .services-section {
+        justify-content: left;
+    }
+
+    .services-content {
+        width: 100%;
+    }
+}
+
+/* For mobile screens */

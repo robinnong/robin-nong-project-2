@@ -1,6 +1,6 @@
 header.home {
     height: 100vh;
-    background-image: url(../../assets/home-1.jpeg);
+    background-image: url(../assets/home-1.jpeg);
     background-size: cover;
     background-position: bottom;
 }
@@ -19,7 +19,7 @@ header.home {
 }
 
 .overview-image::after {
-    content: url(../../assets/home-circle-text.png);
+    content: url(../assets/home-circle-text.png);
     position: absolute;
     top: -100px;
     left: -100px;
@@ -43,7 +43,7 @@ header.home {
             width: 60%;
             text-align: center;
             font-style: italic;
-            color: grey;
+            color: $fontMediumGrey;
             font-size: 1.6rem;
             line-height: 2.8rem;
             margin: 0 auto;
@@ -55,15 +55,16 @@ header.home {
             }
         }
         button {
-        color: grey;
-        font-size: 2.8rem;
-        top: calc(50% - 1.4rem);
-        bottom: calc(50% - 1.4rem);
-        transition: all 0.2s;
-        }
-        button:focus,
-        button:hover {
-            color: black;
+            color: $fontMediumGrey;
+            font-size: 2.8rem;
+            top: calc(50% - 1.4rem);
+            bottom: calc(50% - 1.4rem);
+            transition: all 0.2s;
+
+                &:focus,
+                &:hover {
+                    color: black;
+            }
         }
         button:first-of-type {
             position: absolute;
@@ -76,7 +77,7 @@ header.home {
 }
 
 .services-section {
-    background-image: url(../../assets/home-4.jpeg);
+    background-image: url(../assets/home-4.jpeg);
     background-size: cover;
     background-position: right;
     padding: 200px 0;
@@ -95,7 +96,7 @@ header.home {
         display: flex; 
     }
     p {
-        color: grey; 
+        color: $fontMediumGrey;
     }
 }
 
@@ -193,15 +194,14 @@ header.home {
         padding: 0;
     }
     p {
-        color: grey;
+        color: $fontMediumGrey;
         margin: 40px 0;
     }
     a {
-        text-transform: uppercase;
-        font-weight: 700;
-        font-family: $fontBase;
+        @include primaryFont(700);
         font-size: 1.2rem;
         letter-spacing: 1px;
+        text-transform: uppercase;
         padding: 15px 25px;
         background-color: white;
     }

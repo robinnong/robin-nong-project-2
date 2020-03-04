@@ -2,7 +2,7 @@
     width: 100%;
         input,
         textarea {
-            color: grey;
+            color: $fontMediumGrey;
             margin: 10px 0;
             border: none;
             border-bottom: 1.5px solid rgb(175, 175, 175);
@@ -23,16 +23,16 @@
             border-bottom: 1.5px solid black;
         }
         button {
-            font-family: $fontBase;
-            font-weight: 600;
+            @include primaryFont(600);
             text-transform: uppercase;
             padding-bottom: 10px;
             border-bottom: 1px solid transparent;
             transition: all 0.3s;
-        }
-        button:focus, 
-        button:hover {
+
+            &:focus,
+            &:hover {
             border-bottom: 1px solid black;
+        }
     }
 }
 

@@ -1,8 +1,11 @@
+@import 'variables';
 @import 'setup';
 @import 'global';
 @import 'header';
+@import 'footer';
 @import 'home';
 @import 'blog';
-@import 'form';
 @import 'contact';
-@import 'footer'
+@import 'longForm';
+@import 'mediaQueries'
+

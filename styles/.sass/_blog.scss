@@ -1,7 +1,7 @@
 /* BLOG PAGE */
 header.blog-header {
     height: 90vh;
-    background-image: url(../../assets/blog-1.jpeg);
+    background-image: url(../assets/blog-1.jpeg);
     background-size:cover;
     background-position: bottom;
 }
@@ -14,7 +14,7 @@ header.blog-header {
     }
     h2 {
         font-weight: 700;
-        border-bottom: 1px solid grey;
+        border-bottom: $lightBorder;
         margin-bottom: 50px;
         padding-bottom: 30px;
     }
@@ -23,7 +23,7 @@ header.blog-header {
 article {
     padding-top: 100px;
         nav {
-            color: grey;
+            $fontMediumGrey;
             margin-bottom: 50px;
                 span {
                     color: black;
@@ -44,15 +44,14 @@ article {
     display: flex;
     align-items: center;
     padding: 30px 0;
-    border-bottom: 1px solid grey;
+    border-bottom: $lightBorder;
         p:first-of-type {
-            font-family: 'Montserrat', sans-serif;
+            @include primaryFont(500);
             text-transform: uppercase; 
             font-size: 1.6rem;
-            font-weight: 500;
         }
         p:last-of-type {
-            color: grey;
+            color: $fontMediumGrey;
         }
         div:not(:first-of-type) {
             width: 25%;
@@ -75,7 +74,7 @@ article {
     padding-top: 50px;
         p {
             margin-bottom: 20px;
-            color: grey;
+            color: $fontMediumGrey;
         }
         p:first-of-type {
             color: black;
@@ -113,7 +112,7 @@ article {
             text-transform: uppercase;
         }
         p:last-of-type {
-            color: grey;
+            color: $fontMediumGrey;
             font-size: 1.2rem;
         }
     }
@@ -129,9 +128,14 @@ article {
     background-color: #F6F6F6;
     padding: 20px;
     margin-left: 4%;
+    position: relative;
 }
 
 .comment-bubble::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    background-color: #F6F6F6;
 }
 
 .post-comment {

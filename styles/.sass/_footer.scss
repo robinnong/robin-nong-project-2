@@ -7,10 +7,10 @@ footer {
             justify-content: space-between;
         }
         .bar {
+            letter-spacing: 5px;
             text-align: center;
             border-top: 1px solid rgb(100, 100, 100);
             padding: 50px 0;
-            letter-spacing: 5px;
         }
         .social-links ul {
             display: flex;
@@ -32,11 +32,6 @@ address {margin-bottom: 20px;}
     }
 }
 
-@mixin buttonSize {
-    height: 100%;
-    height: 40px;
-}
-
 .subscribe-now {
     display: flex;
     flex-direction: column;
@@ -49,11 +44,17 @@ address {margin-bottom: 20px;}
         input {
             padding: 0 15px;
             display: block;  
-            @include buttonSize;
+            @include footerButtonSize;
     }
         button { 
             font-size: 2.6rem;
-            background-color: $bgcGreen;
-            @include buttonSize;
+            background-color: $bgcPrimary;
+            @include footerButtonSize;
+            transition: all 0.3s;
+            
+            &:focus,
+            &:hover {
+                background-color: $bgcPrimaryHover;
+        }
     } 
 }

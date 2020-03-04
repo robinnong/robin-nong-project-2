@@ -4,6 +4,9 @@ header {
             width: 100%;
             position: relative;
     }
+       input {
+            display: none;
+    }
 }
 
 .nav-menu {
@@ -14,11 +17,12 @@ header {
         }
         li {
             padding: 0 15px;
-            font-family: $fontBase; 
-        }
-        li:focus,
-        li:hover {
-            text-decoration: line-through;
+            font-family: $fontPrimary; 
+            
+            &:focus,
+            &:hover {
+                text-decoration: line-through;
+            }
         }
         a {
             padding: 5px;
@@ -29,8 +33,8 @@ header {
 }
 
 .logo { 
+    @include primaryFont(700);
     font-size: 3.4rem;
-    font-weight: 700;
     text-align: center;
     width: 200px;
     position: absolute;
@@ -64,8 +68,4 @@ header {
     font-size: 2rem;
     height: 0;
     overflow: hidden;
-}
-
-input[type="checkbox"] {
-    display: none;
 }
