@@ -45,14 +45,13 @@ address {margin-bottom: 20px;}
             padding: 0 15px;
             display: block;  
             @include footerButtonSize;
-    }
+        }
         button { 
             font-size: 2.6rem;
             background-color: $bgcPrimary;
             @include footerButtonSize;
             transition: all 0.3s;
             
-            &:focus,
             &:hover {
                 background-color: $bgcPrimaryHover;
         }
