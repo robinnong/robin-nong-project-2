@@ -5,6 +5,7 @@ header.home {
     background-position: bottom;
 }
 
+.home 
 .overview {
     background-color: $bgcGreen;
     padding: 200px 0 100px 0;
@@ -77,19 +78,20 @@ header.home {
 .services-section {
     background-image: url(../../assets/home-4.jpeg);
     background-size: cover;
-    padding: 200px 100px;
+    background-position: right;
+    padding: 200px 0;
     display: flex;
     justify-content: right;
 }
 
 .services-content {
-    width: 50%;
+    width: 60%;
     max-width: 1500px;
     display: flex;
     flex-wrap: wrap; 
     li {
-        width: calc(50% - 30px);
-        margin: 50px 15px;
+        width: calc(50% - 20px);
+        margin: 50px 10px;
         display: flex; 
     }
     p {
@@ -110,32 +112,36 @@ header.home {
 
 .services-text {
     margin-left: 30px;
-    width: calc(100% - 60px - 60px);
+    width: calc(100% - 60px - 40px);
 }
 
-.team-section {
+.team-section { 
     padding: 150px 0;
     h2 {
         text-align: center;
+        margin-bottom: 50px; 
     }
 }
 
 .team-content {
+    max-width: 1000px;  
+    margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
-    div {
-        margin: 10px 10px;
-        height: 200px;
+    flex-wrap: wrap; 
+    justify-content: center;
+    div { 
+        height: 250px;
+        margin: 10px;
     }
 }
 
 .txt-2,
 .team-img-container {
-    width: 200px;
+    width: calc(250px - 20px);
 }
 
 .txt-1 {
-    width: 50%;
+    width: calc(500px - 20px);
     background-color: $bgcLight;
     padding: 30px;
     display: flex;

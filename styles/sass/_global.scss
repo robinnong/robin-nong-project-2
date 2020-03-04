@@ -74,6 +74,7 @@ fieldset {border: none;}
 address {font-style: normal;}
 
 /* FONT STUFF */
+.logo,
 h1,
 h2,
 h3,
@@ -94,18 +95,7 @@ h6,
 header nav,
 .bar {
     text-transform: uppercase;
-}
-
-h1 {
-    font-size: 3.7rem;
-    letter-spacing: 0.9px;
-}
-
-h2 {
-    padding-bottom: 30px;
-    margin-bottom: 50px;
-}
-
+} 
 h2,
 h3 {font-weight: 400;}
 
