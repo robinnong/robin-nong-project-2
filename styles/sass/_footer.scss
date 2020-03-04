@@ -20,9 +20,7 @@ footer {
     }
 }
 
-address {
-    margin-bottom: 20px;
-}
+address {margin-bottom: 20px;}
 
 .recent-posts {
     h4 {
@@ -50,12 +48,12 @@ address {
     margin-top: 20px;
         input {
             padding: 0 15px;
-            display: block; 
+            display: block;  
             @include buttonSize;
     }
-        button {
+        button { 
             font-size: 2.6rem;
             background-color: $bgcGreen;
             @include buttonSize;
-    }
+    } 
 }

@@ -37,7 +37,7 @@
     </header>
     <!-- Header ends here -->
     <!-- Main starts here -->
-    <main class="contact">
+    <main class="contact-main">
         <div class="full-bleed-image-1"></div>
         <div class="wrapper contact-details">
             <div class="deco-line"></div>
@@ -75,15 +75,19 @@
             <h2>Get In touch With Us</h2>
             <p>If you have any questions, please don't hesitate to send us a message.</p>
             <form action="#" name="contact-form" class="long-form">
-                <label for="name" class="visibilityHidden">Name</label>
-                <input type="text" name="name" id="name" placeholder="Enter your name..." required>
-                <label for="email" class="visibilityHidden">E-mail</label>  
-                <input type="email" name="email" id="email" placeholder="yourname@domain.com" required>
-                <label for="subject" class="visibilityHidden">Subject</label>
-                <input type="text" name="subject" id="subject">
-                <label for="message" class="visibilityHidden">Message</label>
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="Here goes your message"></textarea>
-                <button type="submit">Send Message</button>
+                <fieldset>
+                    <label for="name" class="visuallyHidden">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name..." required>
+                    <label for="email" class="visuallyHidden">E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="yourname@domain.com" required>
+                    <label for="subject" class="visuallyHidden">Subject</label>
+                    <input type="text" name="subject" id="subject" placeholder="Subject (optional)">
+                </fieldset>
+                <fieldset>
+                    <label for="message" class="visuallyHidden">Message</label>
+                    <textarea name="message" id="message" maxlength="200" placeholder="Here goes your comment"></textarea>
+                </fieldset>
+                <button type="submit">Submit Comment</button>
             </form>
         </div>
         <section class="full-bleed-image-2"></section>
@@ -134,7 +138,7 @@
                 <form action="" class="subscription-form" name="subscription-form">
                     <label for="email" class="visuallyHidden">E-mail</label>
                     <input type="email" name="email" id="email" placeholder="Enter your email">
-                    <button type="submit" aria-label="Submit">🠖</button>
+                    <button type="submit" class="pointer" aria-label="Submit">🠖</button>
                 </form>
             </div>
         </div>

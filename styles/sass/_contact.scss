@@ -1,3 +1,11 @@
+.contact-main {
+    position: relative;
+        h1 {
+            position: absolute;
+            top: 150px;
+    }
+}
+
 .full-bleed-image-1 {
     height: 200px;
     background-image: url(../../assets/contact-1.jpeg);
@@ -10,15 +18,6 @@
     background-size: cover;
 }
 
-main.contact {
-    position: relative;
-}
-
-.contact h1 {
-    position: absolute;
-    top: 150px;
-}
-
 .contact-details {
     padding-top: 100px;
     padding-bottom: 50px;
@@ -29,8 +28,8 @@ main.contact {
 
 .contact-tiles {
     display: flex;
-    li {
-        width: calc(100% /3);
+        li {
+            width: calc(100% /3);
     }
 }
 

@@ -270,6 +270,10 @@ body {
   margin: 0 auto;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
 /* removes default padding and margins*/
 ul,
 li,
@@ -279,7 +283,8 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+fieldset {
   margin: 0;
   padding: 0;
 }
@@ -308,6 +313,7 @@ button {
   font-family: inherit;
 }
 
+input,
 button,
 fieldset {
   border: none;
@@ -351,7 +357,6 @@ h1 {
 
 h2 {
   padding-bottom: 30px;
-  border-bottom: 1px solid grey;
   margin-bottom: 50px;
 }
 
@@ -360,23 +365,21 @@ h3 {
   font-weight: 400;
 }
 
+h3 {
+  margin-bottom: 10px;
+}
+
 h4 {
   font-weight: 400;
   margin-bottom: 30px;
 }
 
-.overview {
-  background-color: #C3DAB7;
-}
-
 header {
-  padding-top: 30px;
-  position: relative;
+  padding: 30px 0;
 }
 
 header nav {
   width: 100%;
-  height: auto;
   position: relative;
 }
 
@@ -422,12 +425,12 @@ header nav {
 
 .shopping-icon div {
   font-size: 1rem;
-  position: absolute;
-  background-color: #C3DAB7;
-  right: 5px;
-  top: 10px;
   height: 15px;
   width: 15px;
+  background-color: #C3DAB7;
+  position: absolute;
+  right: 5px;
+  top: 10px;
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -440,6 +443,16 @@ header nav {
           align-items: center;
 }
 
+.mobile-menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
 header.home {
   height: 100vh;
   background-image: url(../../assets/home-1.jpeg);
@@ -448,12 +461,13 @@ header.home {
 }
 
 .overview {
+  background-color: #C3DAB7;
   padding: 200px 0 100px 0;
 }
 
 .overview-image {
   height: 250px;
-  width: 400px;
+  width: 450px;
   margin: 0 auto 50px auto;
   position: relative;
 }
@@ -482,24 +496,28 @@ header.home {
 }
 
 .product-gallery {
-  padding: 100px 0;
+  padding: 150px 0;
+  position: relative;
 }
 
 .product-gallery div {
-  position: relative;
   width: 60%;
   text-align: center;
+  font-style: italic;
+  color: grey;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
   margin: 0 auto;
 }
 
 .product-gallery div img {
-  width: 200px;
-  height: 200px;
+  width: 275px;
+  height: 275px;
   border-radius: 50%;
-  margin: 0 auto 30px auto;
+  margin: 0 auto 40px auto;
 }
 
-.product-gallery div button {
+.product-gallery button {
   color: grey;
   font-size: 2.8rem;
   top: calc(50% - 1.4rem);
@@ -508,25 +526,25 @@ header.home {
   transition: all 0.2s;
 }
 
-.product-gallery div button:focus,
-.product-gallery div button:hover {
+.product-gallery button:focus,
+.product-gallery button:hover {
   color: black;
 }
 
-.product-gallery div button:first-of-type {
+.product-gallery button:first-of-type {
   position: absolute;
-  left: -100px;
+  left: 0;
 }
 
-.product-gallery div button:last-of-type {
+.product-gallery button:last-of-type {
   position: absolute;
-  right: -100px;
+  right: 0;
 }
 
 .services-section {
   background-image: url(../../assets/home-4.jpeg);
   background-size: cover;
-  padding: 100px;
+  padding: 200px 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -537,6 +555,7 @@ header.home {
 
 .services-content {
   width: 50%;
+  max-width: 1500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -545,8 +564,8 @@ header.home {
 }
 
 .services-content li {
-  width: 50%;
-  margin: 20px 0;
+  width: calc(50% - 30px);
+  margin: 50px 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -557,10 +576,10 @@ header.home {
 }
 
 .icon-container {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   font-size: 2.2rem;
-  border: 1.5px solid black;
+  border: 2px solid black;
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -574,12 +593,12 @@ header.home {
 }
 
 .services-text {
-  margin-left: 10px;
-  width: calc(100% - 50px - 10px);
+  margin-left: 30px;
+  width: calc(100% - 60px - 60px);
 }
 
 .team-section {
-  padding: 100px 0;
+  padding: 150px 0;
 }
 
 .team-section h2 {
@@ -644,7 +663,7 @@ header.home {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 500px;
+  height: 600px;
 }
 
 .portfolio-wrapper {
@@ -679,14 +698,23 @@ header.home {
   height: 100%;
 }
 
-.portfolio-text p {
-  margin: 30px 0;
+.portfolio-text h2 {
+  margin: 0;
+  padding: 0;
 }
 
-.view-button {
+.portfolio-text p {
+  color: grey;
+  margin: 40px 0;
+}
+
+.portfolio-text a {
   text-transform: uppercase;
   font-weight: 700;
-  padding: 10px 15px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  padding: 15px 25px;
   background-color: white;
 }
 
@@ -715,6 +743,7 @@ header.blog-header {
 
 .blog-main h2 {
   font-weight: 700;
+  border-bottom: 1px solid grey;
 }
 
 article {
@@ -853,48 +882,48 @@ article .social-links a {
   padding: 50px 0;
 }
 
-form.long-form {
+.long-form {
   width: 100%;
 }
 
-form.long-form input,
-form.long-form textarea {
-  border: none;
-  margin: 10px 0;
+.long-form input,
+.long-form textarea {
   color: grey;
+  margin: 10px 0;
+  border: none;
   border-bottom: 1.5px solid #afafaf;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
-form.long-form input {
-  width: calc((100% - 50px)/3);
+.long-form input {
   height: 30px;
+  width: calc((100% - 50px)/3);
 }
 
-form.long-form textarea {
+.long-form textarea {
   height: 200px;
   width: 100%;
 }
 
-form.long-form textarea:focus,
-form.long-form input:focus {
-  border: none;
+.long-form textarea:focus,
+.long-form input:focus {
   color: black;
+  border: none;
   border-bottom: 1.5px solid black;
 }
 
-form.long-form button[type="submit"] {
-  text-transform: uppercase;
+.long-form button {
   font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
   padding-bottom: 10px;
   border-bottom: 1px solid transparent;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
-form.long-form button[type="submit"]:focus,
-form.long-form button[type="submit"]:hover {
+.long-form button:focus,
+.long-form button:hover {
   border-bottom: 1px solid black;
 }
 
@@ -906,8 +935,16 @@ fieldset {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  padding: 0;
   margin: 20px 0;
+}
+
+.contact-main {
+  position: relative;
+}
+
+.contact-main h1 {
+  position: absolute;
+  top: 150px;
 }
 
 .full-bleed-image-1 {
@@ -920,15 +957,6 @@ fieldset {
   height: 500px;
   background-image: url(../../assets/contact-2.jpeg);
   background-size: cover;
-}
-
-main.contact {
-  position: relative;
-}
-
-.contact h1 {
-  position: absolute;
-  top: 150px;
 }
 
 .contact-details {

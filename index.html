@@ -7,8 +7,7 @@
     <!-- link to stylesheet -->
     <link rel="stylesheet" href="./styles/sass/style.css">
     <!-- link to Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|OpenSans:400|Fredericka+the+Great&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:400,700&display=swap" rel="stylesheet">
     <!-- link to fontawesome -->
     <script src="https://kit.fontawesome.com/f3369905b3.js" crossorigin="anonymous"></script>
 </head>
@@ -36,6 +35,10 @@
                     </li>
                 </div>
             </ul>
+            <label for="mobile-menu" aria-label="Click to toggle navigation menu">
+                <i class="fas fa-bars" aria-hidden="true"></i>
+            </label>
+            <input type="checkbox" name="mobile-menu" id="mobile-menu" aria-hidden="true">
             <p class="logo">Creative</p>
         </nav>
     </header>
@@ -61,20 +64,20 @@
             <div>
                 <img src="./assets/home-3.jpeg" alt="">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam repudiandae veritatis quae minima nobis, ducimus fugit necessitatibus at earum iusto sit unde non distinctio repellendus itaque. Illo, minus? Dignissimos vero explicabo quaerat aut fugit doloribus saepe nulla iste non iure consequatur impedit cumque, qui adipisci ab voluptatibus minima omnis incidunt?</p>
-                <button aria-label="Click to toggle to previous gallery item">  
-                    <i class="fas fa-chevron-left" aria-hidden="true"></i>
-                </button>
-                <button aria-label="Click to toggle next to gallery item">
-                    <i class="fas fa-chevron-right" aria-hidden="true"></i>
-                </button>
             </div>
+            <button aria-label="Click to toggle to previous gallery item">
+                <i class="fas fa-chevron-left" aria-hidden="true"></i>
+            </button>
+            <button aria-label="Click to toggle to next gallery item">
+                <i class="fas fa-chevron-right" aria-hidden="true"></i>
+            </button>
         </section>
         <section class="services-section">
             <ul class="services-content">
                 <li>
                     <div class="icon-container">
                         <i class="fas fa-magic"></i>
-                    </div>
+                    </div> 
                     <div class="services-text">
                         <h3>Unique Design</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta ad consequatur voluptatem rerum iure nulla?</p>
@@ -86,7 +89,7 @@
                     </div>
                     <div class="services-text">
                         <h3>Seo Marketing</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ipsam qui similique quas doloribus ducimus.
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ipsam qui similique quas doloribus ducimus. 
                         </p>
                     </div>
                 </li>
@@ -159,10 +162,10 @@
         <section class="portfolio-section">
             <div class="portfolio-wrapper">
                 <div class="portfolio-text">
-                    <h3>Drop Us a Line</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi voluptatibus eaque dolorum enim ea exercitationem.
+                    <h2>Drop Us a Line</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi voluptatibus eaque dolorum enim ea exercitationem. Expedita ipsam qui similique quas doloribus ducimus.
                     </p>
-                    <a href="" class="view-button">View Portfolio</a>
+                    <a href="#">View Portfolio</a>
                 </div>
             </div>
             <div class="text-background"></div>
@@ -216,7 +219,7 @@
                 <form action="" class="subscription-form" name="subscription-form">
                     <label for="email" class="visuallyHidden">E-mail</label>
                     <input type="email" name="email" id="email" placeholder="Enter your email">
-                    <button type="submit" aria-label="Submit">🠖</button>
+                    <button type="submit" class="pointer" aria-label="Submit">🠖</button>
                 </form>
             </div>
         </div>

@@ -1,16 +1,16 @@
-form.long-form {
+.long-form {
     width: 100%;
         input,
         textarea {
-            border: none;
-            margin: 10px 0;
             color: grey;
+            margin: 10px 0;
+            border: none;
             border-bottom: 1.5px solid rgb(175, 175, 175);
             transition: all 0.2s;
         }
         input {
-            width: calc((100% - 50px)/3);
             height: 30px;
+            width: calc((100% - 50px)/3);
         }
         textarea {
             height: 200px;
@@ -18,19 +18,19 @@ form.long-form {
         }
         textarea:focus,
         input:focus {
-            border: none;
             color: black;
+            border: none;
             border-bottom: 1.5px solid black;
         }
-        button[type="submit"] {
-            text-transform: uppercase;
+        button {
             font-family: $fontBase;
+            text-transform: uppercase;
             padding-bottom: 10px;
             border-bottom: 1px solid transparent;
             transition: all 0.3s;
         }
-        button[type="submit"]:focus, 
-        button[type="submit"]:hover {
+        button:focus, 
+        button:hover {
             border-bottom: 1px solid black;
     }
 }
@@ -39,6 +39,5 @@ fieldset {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 0;
     margin: 20px 0;
 }
