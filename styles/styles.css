@@ -540,7 +540,7 @@ address {
   background-color: #98c47e;
 }
 
-.home {
+.home-header {
   height: 100vh;
   background-image: url(../assets/home-1.jpeg);
   background-size: cover;
