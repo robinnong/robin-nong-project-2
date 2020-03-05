@@ -31,6 +31,10 @@
         overflow: visible;
     }
 
+    input[type="checkbox"]:checked .mobile-menu {
+        
+    }
+
     .nav-menu {
         flex-direction: column;
         justify-content: flex-start;
@@ -126,6 +130,9 @@
             flex-grow: 1;
         }
     } 
+    .footer-content {
+        padding: 20px;
+    }
 }
 
 /* For mobile screens */

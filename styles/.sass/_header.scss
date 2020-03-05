@@ -4,9 +4,6 @@ header {
             width: 100%;
             position: relative;
     }
-       input {
-            display: none;
-    }
 }
 
 .nav-menu {
@@ -67,4 +64,7 @@ header {
     font-size: 2rem;
     height: 0;
     overflow: hidden;
+    + input {
+        display: none;
+    }
 }
