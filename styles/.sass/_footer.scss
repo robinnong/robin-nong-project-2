@@ -13,15 +13,17 @@ footer {
 .footer-bar {
     letter-spacing: 5px;
     text-align: center;
-    border-top: 1px solid rgb(100, 100, 100);
+    border-top: $lightBorder;
     padding: 50px 0;
 }
 
-.footer-social-links ul {
-    display: flex;
-        li {
-            margin-right: 20px;
-        }   
+.footer-social-links {
+    ul {
+        display: flex;
+    }
+    li {
+        margin-right: 20px;
+    }   
 }
 
 address {margin-bottom: 20px;}
@@ -55,7 +57,7 @@ address {margin-bottom: 20px;}
             background-color: $bgcPrimary;
             height: 40px;
             transition: all 0.3s;
-            
+            &:focus,
             &:hover {
                 background-color: $bgcPrimaryHover;
         }
