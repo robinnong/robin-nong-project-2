@@ -9,6 +9,18 @@
             width: 100%;
         }
     } 
+    .contact-tiles {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        li {
+            width: 100%;
+            padding: 20px 0;
+        }
+        li:not(:last-of-type) {
+            border-right: none;
+        }
+    }
 
 }
 

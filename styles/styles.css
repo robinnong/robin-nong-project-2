@@ -1065,16 +1065,15 @@ h6 {
 }
 
 .contact-tiles {
-  margin: 50px 0;
+  margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .contact-tiles li {
-  width: 350px;
-  padding: 50px 0;
-  padding-left: 50px;
+  width: calc(100%/3);
+  padding: 50px;
 }
 
 .contact-tiles li:not(:last-of-type) {
@@ -1177,6 +1176,26 @@ fieldset {
   }
   .services-content li {
     width: 100%;
+  }
+  .contact-tiles {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .contact-tiles li {
+    width: 100%;
+    padding: 20px 0;
+  }
+  .contact-tiles li:not(:last-of-type) {
+    border-right: none;
+  }
+  .contact-tiles ul {
+    margin-bottom: 10px;
   }
 }
 
