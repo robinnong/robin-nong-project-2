@@ -1,23 +1,27 @@
 footer {
     color: white;
     background-color:#333333;
-        .content {
-            padding: 100px 0;
-            display: flex;
-            justify-content: space-between;
-        }
-        .bar {
-            letter-spacing: 5px;
-            text-align: center;
-            border-top: 1px solid rgb(100, 100, 100);
-            padding: 50px 0;
-        }
-        .social-links ul {
-            display: flex;
-                li {
-                    margin-right: 20px;
-                }   
-    }
+}
+
+.footer-content {
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-bar {
+    letter-spacing: 5px;
+    text-align: center;
+    border-top: 1px solid rgb(100, 100, 100);
+    padding: 50px 0;
+}
+
+.footer-social-links ul {
+    display: flex;
+        li {
+            margin-right: 20px;
+        }   
 }
 
 address {margin-bottom: 20px;}
@@ -27,7 +31,7 @@ address {margin-bottom: 20px;}
         text-align: center;
     }
     li {
-        list-style: initial;
+        list-style: inside;
         padding-bottom: 5px;
     }
 }
@@ -35,7 +39,7 @@ address {margin-bottom: 20px;}
 .subscribe-now {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-end;  
 }
 
 .subscription-form {
@@ -44,12 +48,12 @@ address {margin-bottom: 20px;}
         input {
             padding: 0 15px;
             display: block;  
-            @include footerButtonSize;
+            height: 40px;
         }
         button { 
             font-size: 2.6rem;
             background-color: $bgcPrimary;
-            @include footerButtonSize;
+            height: 40px;
             transition: all 0.3s;
             
             &:hover {

@@ -5,14 +5,21 @@ $bgcPrimaryHover: rgb(152, 196, 126);
 $bgcSecondary: #F6F6F6;
 $sectionPadding: 100px 0;
 $fontMediumGrey: grey;
-$lightBorder: 1px solid grey;
+$lightBorder: 1px solid grey; 
 
 @mixin primaryFont($fontWeight) {
     font-family: $fontPrimary;
     font-weight: $fontWeight;
 }
 
-@mixin footerButtonSize {
-    height: 100%;
-    height: 40px;
+@mixin backgroundImage($height) {
+    height: $height;
+    background-size: cover;
+    background-position: center;
+}
+
+@mixin mainHeading{
+    font-size: 5.4rem;
+    letter-spacing: 1px;
+    line-height: 5.6rem;
 }
