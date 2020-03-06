@@ -1101,7 +1101,7 @@ h6 {
 
 .long-form input,
 .long-form textarea {
-  color: grey;
+  color: #c8c8c8;
   margin: 10px 0;
   border: none;
   border-bottom: 1.5px solid #afafaf;
@@ -1298,6 +1298,7 @@ fieldset {
   }
   .recent-posts {
     margin: 50px 0;
+    padding: 0;
   }
   .recent-posts h4 {
     text-align: left;
@@ -1369,6 +1370,9 @@ fieldset {
   .footer-bar {
     font-size: 1.2rem;
     padding: 20px 0;
+  }
+  .long-form input {
+    width: 100%;
   }
 }
 
