@@ -445,7 +445,7 @@ header nav {
 .mobile-menu {
   position: absolute;
   right: 0;
-  top: 0;
+  top: -1px;
   font-size: 2.6rem;
   height: 0;
   overflow: hidden;
@@ -491,6 +491,10 @@ footer {
 
 address {
   margin-bottom: 20px;
+}
+
+.recent-posts {
+  padding: 0 20px;
 }
 
 .recent-posts h4 {
@@ -559,7 +563,7 @@ address {
   position: relative;
 }
 
-.overview-image::after {
+.overview-image::before {
   content: url(../assets/home-circle-text.png);
   position: absolute;
   top: -100px;
@@ -693,31 +697,17 @@ address {
   margin-bottom: 50px;
 }
 
-.team-content {
-  max-width: 1000px;
+.team-container {
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  grid-auto-rows: 200px;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
-.team-content div {
-  height: 250px;
-  margin: 10px;
-}
-
-.txt-2,
-.team-img-container {
-  width: calc(250px - 20px);
-}
-
-.txt-1 {
-  width: calc(500px - 20px);
+.team-txt-1 {
   background-color: #F6F6F6;
   padding: 30px;
   display: -webkit-box;
@@ -730,9 +720,12 @@ address {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / 3;
 }
 
-.txt-2 {
+.team-txt-2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -745,7 +738,7 @@ address {
   text-transform: uppercase;
 }
 
-.txt-2 h4 {
+.team-txt-2 h4 {
   text-align: center;
   width: 80%;
   margin: 0;
@@ -1092,6 +1085,7 @@ h6 {
   height: 200px;
   background-size: cover;
   background-position: center;
+  background-position: left;
 }
 
 .full-bleed-image-2 {
@@ -1167,9 +1161,43 @@ fieldset {
   .mobile-menu {
     height: auto;
     overflow: visible;
+    z-index: 20;
   }
   .nav-menu {
-    display: none;
+    background-color: #F6F6F6;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    right: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    z-index: 10;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .nav-menu div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .nav-menu li {
+    margin: 10px 0;
+  }
+  header input:checked + ul {
+    right: -100%;
   }
   .services-content {
     -webkit-box-orient: vertical;
@@ -1205,6 +1233,30 @@ fieldset {
 @media (max-width: 768px) {
   .blog-header {
     height: 400px;
+  }
+  .overview-image {
+    width: 70%;
+    height: 70%;
+  }
+  .overview-image::before {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  .overview-text {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .overview-text div:first-of-type {
+    margin-bottom: 50px;
+  }
+  .overview-text div {
+    width: 70%;
   }
   .product-gallery div {
     width: 80%;
@@ -1267,6 +1319,13 @@ fieldset {
   .wrapper {
     width: 85%;
   }
+  .overview {
+    padding: 100px 0;
+  }
+  .overview-image::before {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
   .product-gallery {
     padding: 100px 0;
     font-size: 1.4rem;
@@ -1275,6 +1334,12 @@ fieldset {
   .product-gallery img {
     width: 225px;
     height: 225px;
+  }
+  .team-txt-1 h4 {
+    margin-bottom: 10px;
+  }
+  .team-txt-1 p {
+    line-height: 2rem;
   }
   .blog-main h1 {
     font-size: 4.4rem;

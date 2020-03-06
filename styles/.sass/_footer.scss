@@ -7,7 +7,7 @@ footer {
     padding: 100px 0;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: wrap;  
 }
 
 .footer-bar {
@@ -29,6 +29,7 @@ footer {
 address {margin-bottom: 20px;}
 
 .recent-posts {
+    padding: 0 20px;
     h4 {
         text-align: center;
     }

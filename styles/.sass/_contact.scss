@@ -54,6 +54,7 @@ h6 {
 .full-bleed-image-1 { 
     background-image: url(../assets/contact-1.jpeg);
     @include backgroundImage(200px); 
+    background-position: left;
 }
 
 .full-bleed-image-2 { 

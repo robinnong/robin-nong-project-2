@@ -17,11 +17,11 @@
     position: relative;
 }
 
-.overview-image::after {
+.overview-image::before {
     content: url(../assets/home-circle-text.png);
     position: absolute;
     top: -100px;
-    left: -100px;
+    left: -100px; 
 }
 
 .overview-text {
@@ -121,33 +121,24 @@
     }
 }
 
-.team-content {
-    max-width: 1000px;  
+.team-container {
     margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center;
-    div { 
-        height: 250px;
-        margin: 10px;
-    }
+    display: grid; 
+    grid-gap: 20px;   
+    grid-auto-rows: 200px;  
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
-.txt-2,
-.team-img-container {
-    width: calc(250px - 20px);
-}
-
-.txt-1 {
-    width: calc(500px - 20px);
+.team-txt-1 {
     background-color: $bgcSecondary;
     padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-}
+    grid-column: 1 / 3; 
+} 
 
-.txt-2 {
+.team-txt-2 {
     display: flex;
     justify-content: center;
     align-items: center;

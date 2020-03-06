@@ -4,23 +4,36 @@
     .mobile-menu {
         height: auto;
         overflow: visible;
+        z-index: 20;
     } 
     
-    .nav-menu {
-        display: none;
-        // height: 100vh;
-        // width: 60%;
-        // padding-top: 50px;
-        // background-color: $bgcSecondary;
-        // position: absolute; 
-        // top: -40px;
-        // right: -10vw;
-        // flex-direction: column;
-        // justify-content: flex-start; 
-        // div {
-        //     flex-direction: column;
-        // }
+    .nav-menu { 
+        background-color: $bgcSecondary;  
+        height: 100vh;
+        width: 100vw;
+
+        position: fixed;
+        top: 0;
+        right: 0; 
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        z-index: 10;
+        transition: all 0.5s; 
+        div {
+            flex-direction: column;
+            align-items: center;
+        }
+        li {
+            margin: 10px 0;
+        } 
     } 
+
+    header input:checked + ul {
+        right: -100%;
+    }
+
     .services-content {
         flex-direction: column;
         width: 80%;
@@ -47,6 +60,27 @@
 @media(max-width: 768px) {
     .blog-header {
         height: 400px;
+    }
+
+    .overview-image {
+        width: 70%;
+        height: 70%;
+    }
+
+    .overview-image::before {
+        transform: scale(0.7);
+    }
+
+    .overview-text {
+        width: 100%;
+        flex-direction: column; 
+        align-items: center;
+        div:first-of-type {
+            margin-bottom: 50px;
+        }
+        div {
+            width: 70%;
+        }
     }
 
     .product-gallery div {width: 80%; }
@@ -103,6 +137,14 @@
 
     .wrapper {width: 85%;}
 
+    .overview {
+        padding: 100px 0;
+    }
+
+    .overview-image::before {
+        transform: scale(0.5);
+    }
+
     .product-gallery {
         padding: 100px 0;
         font-size: 1.4rem;
@@ -110,6 +152,15 @@
         img {
             width: 225px;
             height: 225px;
+        }
+    }
+
+    .team-txt-1 {
+        h4 {
+            margin-bottom: 10px;
+        }
+        p {
+            line-height: 2rem;
         }
     }
 
