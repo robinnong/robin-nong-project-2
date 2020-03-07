@@ -499,6 +499,10 @@ address {
   margin-bottom: 50px;
 }
 
+.contact-us {
+  padding-right: 50px;
+}
+
 .recent-posts h4 {
   text-align: center;
 }
@@ -521,29 +525,34 @@ address {
           align-items: flex-end;
 }
 
-.subscription-form {
+.subscribe-now form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   margin-top: 20px;
 }
 
-.subscription-form input {
+.subscribe-now input {
   padding: 0 15px;
   display: block;
-  height: 40px;
+  height: 45px;
+  width: 200px;
 }
 
-.subscription-form button {
+.subscribe-now button {
   color: black;
-  font-size: 2.6rem;
+  font-size: 2rem;
   background-color: #C3DAB7;
-  height: 40px;
+  height: 45px;
+  padding: 0 15px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
-.subscription-form button:focus, .subscription-form button:hover {
+.subscribe-now button:focus, .subscribe-now button:hover {
   background-color: #98c47e;
 }
 
@@ -895,8 +904,26 @@ article .social-links a {
   color: grey;
 }
 
-.article-info div {
-  padding: 5px 0;
+.article-info div:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 10px;
+  max-width: 50%;
+  min-width: 250px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 40%;
+          flex: 1 0 40%;
+}
+
+.article-info div:first-child img {
+  height: 80px;
+  width: 80px;
+  margin-right: 30px;
+  border-radius: 50%;
 }
 
 .article-info div:not(:first-of-type) {
@@ -904,26 +931,7 @@ article .social-links a {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 20%;
           flex: 1 1 20%;
-}
-
-.article-author {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  min-width: 300px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 40%;
-          flex: 1 0 40%;
-}
-
-.article-author img {
-  height: 80px;
-  width: 80px;
-  margin-right: 30px;
-  border-radius: 50%;
+  padding: 5px 0;
 }
 
 .article-text {
@@ -972,32 +980,32 @@ article .social-links a {
   margin-right: 1%;
 }
 
-.published-comments {
+.comments-section {
   padding: 20px 0;
 }
 
-.published-comments li {
+.comments-section li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 10px;
 }
 
-.published-comments img {
+.comments-section img {
   height: 60px;
   width: 60px;
 }
 
-.published-comments p:first-of-type {
+.comments-section p:first-of-type {
   text-transform: uppercase;
 }
 
-.published-comments p:last-of-type {
+.comments-section p:last-of-type {
   color: grey;
   font-size: 1.2rem;
 }
 
-.published-comments span {
+.comments-section span {
   color: green;
   text-transform: initial;
   font-style: italic;
@@ -1022,7 +1030,7 @@ article .social-links a {
   border-right-color: #f0f0f0;
 }
 
-.post-comment {
+.comment-form {
   padding: 50px 0;
 }
 
@@ -1230,6 +1238,9 @@ fieldset {
   }
   .contact-tiles li:not(:last-of-type) {
     border-right: none;
+  }
+  .full-bleed-image-2 {
+    height: 300px;
   }
   .recent-posts h4 {
     text-align: left;
