@@ -79,6 +79,11 @@
 
     .services-wrapper {padding: 100px 30px;} 
 
+    .team-container {  
+        grid-auto-rows: 150px;  
+        grid-template-columns: repeat(auto-fit, 45%);
+    }
+
     .portfolio-section {
         flex-direction: column;
         height: auto;
@@ -134,12 +139,10 @@
     }
 
     .team-txt-1 {
-        h4 {
-            margin-bottom: 10px;
-        }
-        p {
-            line-height: 2rem;
-        }
+        line-height: 2rem;
+            h4 {
+                margin-bottom: 10px;
+            }
     }
     
     .blog-header {height: 350px;}
@@ -150,20 +153,13 @@
     }
  
     .article-author {min-width: initial;}
-    
-    .footer-content,
-    fieldset {flex-direction: column;}
 
     .footer-content h4 {margin-bottom: 20px;}
 
-    .subscribe-now {
-        form {
-            width: 100%;
-        }
-        input {
-            flex-grow: 1;
-        }
-    }  
+    .long-form input,
+    .subscribe-now input {flex-grow: 1;}
+
+    .subscribe-now form {width: 100%;}  
 
     .footer-bar {
         font-size: 1.2rem;

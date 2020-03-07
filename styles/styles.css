@@ -566,6 +566,17 @@ address {
 .overview {
   background-color: #C3DAB7;
   padding: 200px 0 100px 0;
+  position: relative;
+}
+
+.overview::before {
+  content: '';
+  position: absolute;
+  top: -75px;
+  right: calc(50% - 0.5px);
+  height: 150px;
+  width: 1px;
+  background-color: #b3b3b3;
 }
 
 .overview-image {
@@ -710,6 +721,7 @@ address {
 
 .team-section {
   padding: 150px 0;
+  position: relative;
 }
 
 .team-section h2 {
@@ -717,12 +729,23 @@ address {
   margin-bottom: 50px;
 }
 
+.team-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: calc(50% - 0.5px);
+  height: 75px;
+  width: 1px;
+  background-color: #b3b3b3;
+}
+
 .team-container {
+  max-width: 1000px;
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
   grid-gap: 20px;
-  grid-auto-rows: 200px;
+  grid-auto-rows: 250px;
   -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
@@ -837,7 +860,7 @@ address {
 
 /* BLOG PAGE */
 .blog-header {
-  height: 90vh;
+  height: 80vh;
   background-image: url(../assets/blog-1.jpeg);
   background-size: cover;
   background-position: bottom;
@@ -1134,7 +1157,7 @@ h6 {
 
 .long-form input {
   height: 30px;
-  min-width: 200px;
+  min-width: 250px;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 30%;
           flex: 0 1 30%;
@@ -1283,6 +1306,11 @@ fieldset {
   .services-wrapper {
     padding: 100px 30px;
   }
+  .team-container {
+    grid-auto-rows: 150px;
+    -ms-grid-columns: (45%)[auto-fit];
+        grid-template-columns: repeat(auto-fit, 45%);
+  }
   .portfolio-section {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1348,11 +1376,11 @@ fieldset {
     width: 225px;
     height: 225px;
   }
+  .team-txt-1 {
+    line-height: 2rem;
+  }
   .team-txt-1 h4 {
     margin-bottom: 10px;
-  }
-  .team-txt-1 p {
-    line-height: 2rem;
   }
   .blog-header {
     height: 350px;
@@ -1364,23 +1392,17 @@ fieldset {
   .article-author {
     min-width: initial;
   }
-  .footer-content,
-  fieldset {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
   .footer-content h4 {
     margin-bottom: 20px;
   }
-  .subscribe-now form {
-    width: 100%;
-  }
+  .long-form input,
   .subscribe-now input {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
+  }
+  .subscribe-now form {
+    width: 100%;
   }
   .footer-bar {
     font-size: 1.2rem;
