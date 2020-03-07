@@ -4,7 +4,8 @@ $bgcPrimary:#C3DAB7;
 $bgcPrimaryHover: rgb(152, 196, 126);
 $bgcSecondary: #F6F6F6;
 $sectionPadding: 100px 0;
-$fontMediumGrey: grey;
+$mediumGrey: grey;
+$lightGrey: rgb(240, 240, 240);
 $lightBorder: 1px solid grey; 
 
 @mixin primaryFont($fontWeight) {

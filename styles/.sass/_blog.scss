@@ -22,7 +22,7 @@
 article {
     padding-top: 100px;
         nav {
-            color: $fontMediumGrey;
+            color: $mediumGrey;
             margin-bottom: 50px;
                 span {
                     color: black;
@@ -51,7 +51,7 @@ article {
             font-size: 1.6rem;
         }
         p:last-of-type {
-            color: $fontMediumGrey;
+            color: $mediumGrey;
         } 
         div {
             padding: 5px 0;
@@ -79,7 +79,7 @@ article {
     padding-top: 50px;
         p {
             margin-bottom: 20px;
-            color: $fontMediumGrey;
+            color: $mediumGrey;
         }
         p:first-of-type {
             color: black;
@@ -115,40 +115,42 @@ article {
         li {
             display: flex;
             margin-bottom: 10px;
-                img {
-                    height: 60px;
-                    width: 60px;
+        }
+        img {
+            height: 60px;
+            width: 60px;
         }
         p:first-of-type {
             text-transform: uppercase;
         }
         p:last-of-type {
-            color: $fontMediumGrey;
+            color: $mediumGrey;
             font-size: 1.2rem;
         }
-    }
-    span {
-        color: green;
-        text-transform: initial;
-        font-style: italic;
+        span {
+            color: green;
+            text-transform: initial;
+            font-style: italic;
     }
 }
 
 .comment-bubble {
-    width: calc(100% - 50px - 4%);
-    background-color: #F6F6F6;
+    width: calc(100% - 30px);
+    background-color: $lightGrey;
     padding: 20px;
-    margin-left: 4%;
+    margin-left: 30px;
     position: relative;
 }
 
 .comment-bubble::before {
     content: '';
-    position: absolute;
-    left: 0;
-    background-color: #F6F6F6;
+    position: absolute; 
+    right: 100%;
+	top: 10px;
+    height: 0;
+	width: 0;
+	border: 10px solid transparent;
+	border-right-color: $lightGrey;
 }
 
-.post-comment {
-    padding: 50px 0;
-}
+.post-comment {padding: 50px 0;}

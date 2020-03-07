@@ -26,10 +26,12 @@ footer {
     }   
 }
 
-address {margin-bottom: 20px;}
+address {margin-bottom: 20px;} 
+
+.contact-us,
+.recent-posts {margin-bottom: 50px;}
 
 .recent-posts {
-    padding: 0 20px;
     h4 {
         text-align: center;
     }
@@ -42,7 +44,7 @@ address {margin-bottom: 20px;}
 .subscribe-now {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;  
+    align-items: flex-end;    
 }
 
 .subscription-form {
@@ -54,6 +56,7 @@ address {margin-bottom: 20px;}
             height: 40px;
         }
         button { 
+            color: black;
             font-size: 2.6rem;
             background-color: $bgcPrimary;
             height: 40px;
