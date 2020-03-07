@@ -1377,7 +1377,8 @@ fieldset {
     height: 225px;
   }
   .team-txt-1 {
-    line-height: 2rem;
+    padding: 20px;
+    line-height: 1.6rem;
   }
   .team-txt-1 h4 {
     margin-bottom: 10px;
