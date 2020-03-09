@@ -1,3 +1,4 @@
+/* For home page header only */
 .home-header {
     height: 100vh;
     background-image: url(../assets/home-1.jpeg);
@@ -10,7 +11,7 @@
     padding: 200px 0 100px 0;
     position: relative;
 }
-
+/* Decorative line */
 .overview::before {
     content: '';
     position: absolute;
@@ -41,9 +42,7 @@
     text-align: center;
     display: flex;
     justify-content: space-between;
-        div {
-            width: calc(48% - 8px);
-    }
+        div {width: calc(48% - 8px);}
 }
 
 .product-gallery {
@@ -65,6 +64,7 @@
             margin: 0 auto 40px auto;
         }
         button {
+            position: absolute;
             font-size: 2.8rem;
             top: calc(50% - 1.4rem);
             bottom: calc(50% - 1.4rem);
@@ -73,14 +73,8 @@
                     color: black;
             }
         }
-        button:first-of-type {
-            position: absolute;
-            left: 0;
-        }
-        button:last-of-type {
-            position: absolute;
-            right: 0;
-    }
+        button:first-of-type {left: 0;}
+        button:last-of-type {right: 0;}
 }
 
 .services-section {
@@ -123,9 +117,7 @@
 .services-text {
     margin-left: 30px;
     width: calc(100% - 60px - 40px);
-    p {
-        color: $mediumGrey;
-    }
+    p {color: $mediumGrey;}
 }
 
 .team-section { 
@@ -139,11 +131,11 @@
 
 .team-section::before {
     content: '';
+    height: 75px;
+    width: 1px;
     position: absolute;
     top: 0;
     right: calc(50% - 0.5px);
-    height: 75px;
-    width: 1px;
     background-color: rgb(179, 179, 179);
 }
 
@@ -170,11 +162,13 @@
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
-    h4 {
-        text-align: center;
-        width: 80%;
-        margin: 0;
-    }
+}
+
+.team-txt-2 h4,
+.portfolio-wrapper {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .portfolio-section {
@@ -184,8 +178,6 @@
 }
 
 .portfolio-wrapper {
-    width: 80%;
-    margin: 0 auto;
     max-width: 1280px;
     position: absolute;
     top: 0;
@@ -195,15 +187,14 @@
 }
 
 .portfolio-text {
-    text-align: center;
+    height: 100%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: absolute;
     left: 0;
-    width: 40%;
-    height: 100%;
     h2 {
         margin: 0; 
         padding: 0;
@@ -222,14 +213,11 @@
     }
 }
 
-.text-background {
-    height: 100%;
-    width: 50%;
-    background-color: $bgcPrimary;
-}
-
+.text-background,
 .portfolio-img-container {
     height: 100%;
     width: 50%;
 }
+
+.text-background {background-color: $bgcPrimary;}
 

@@ -18,12 +18,8 @@ footer {
 }
 
 .footer-social-links {
-    ul {
-        display: flex;
-    }
-    li {
-        margin-right: 20px;
-    }   
+    ul {display: flex;}
+    li {margin-right: 20px;}   
 }
 
 address {margin-bottom: 20px;} 
@@ -34,9 +30,7 @@ address {margin-bottom: 20px;}
 .contact-us {padding-right: 50px;}
 
 .recent-posts {
-    h4 {
-        text-align: center;
-    }
+    h4 {text-align: center;}
     li {
         list-style: inside;
         padding-bottom: 5px;
@@ -52,23 +46,22 @@ address {margin-bottom: 20px;}
         justify-content: flex-end;
         margin-top: 20px;
     }
-    input {
+    input,
+    button {
         padding: 0 15px;
-        display: block;  
         height: 45px;
+    }
+    input {
+        display: block;  
         width: 200px;
     }
     button { 
         color: black;
         font-size: 2rem;
         background-color: $bgcPrimary;
-        height: 45px;
-        padding: 0 15px;
         transition: all 0.3s;
         &:focus,
-        &:hover {
-            background-color: $bgcPrimaryHover;
-        }
+        &:hover {background-color: $bgcPrimaryHover;}
     } 
 }
 

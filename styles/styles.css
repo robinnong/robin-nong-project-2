@@ -535,10 +535,14 @@ address {
   margin-top: 20px;
 }
 
-.subscribe-now input {
+.subscribe-now input,
+.subscribe-now button {
   padding: 0 15px;
-  display: block;
   height: 45px;
+}
+
+.subscribe-now input {
+  display: block;
   width: 200px;
 }
 
@@ -546,8 +550,6 @@ address {
   color: black;
   font-size: 2rem;
   background-color: #C3DAB7;
-  height: 45px;
-  padding: 0 15px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -556,6 +558,7 @@ address {
   background-color: #98c47e;
 }
 
+/* For home page header only */
 .home-header {
   height: 100vh;
   background-image: url(../assets/home-1.jpeg);
@@ -569,6 +572,7 @@ address {
   position: relative;
 }
 
+/* Decorative line */
 .overview::before {
   content: '';
   position: absolute;
@@ -632,6 +636,7 @@ address {
 }
 
 .product-gallery button {
+  position: absolute;
   font-size: 2.8rem;
   top: calc(50% - 1.4rem);
   bottom: calc(50% - 1.4rem);
@@ -644,12 +649,10 @@ address {
 }
 
 .product-gallery button:first-of-type {
-  position: absolute;
   left: 0;
 }
 
 .product-gallery button:last-of-type {
-  position: absolute;
   right: 0;
 }
 
@@ -731,11 +734,11 @@ address {
 
 .team-section::before {
   content: '';
+  height: 75px;
+  width: 1px;
   position: absolute;
   top: 0;
   right: calc(50% - 0.5px);
-  height: 75px;
-  width: 1px;
   background-color: #b3b3b3;
 }
 
@@ -781,10 +784,11 @@ address {
   text-transform: uppercase;
 }
 
-.team-txt-2 h4 {
+.team-txt-2 h4,
+.portfolio-wrapper {
   text-align: center;
   width: 80%;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .portfolio-section {
@@ -796,8 +800,6 @@ address {
 }
 
 .portfolio-wrapper {
-  width: 80%;
-  margin: 0 auto;
   max-width: 1280px;
   position: absolute;
   top: 0;
@@ -807,7 +809,8 @@ address {
 }
 
 .portfolio-text {
-  text-align: center;
+  height: 100%;
+  width: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -823,8 +826,6 @@ address {
           align-items: center;
   position: absolute;
   left: 0;
-  width: 40%;
-  height: 100%;
 }
 
 .portfolio-text h2 {
@@ -847,15 +848,14 @@ address {
   background-color: white;
 }
 
-.text-background {
-  height: 100%;
-  width: 50%;
-  background-color: #C3DAB7;
-}
-
+.text-background,
 .portfolio-img-container {
   height: 100%;
   width: 50%;
+}
+
+.text-background {
+  background-color: #C3DAB7;
 }
 
 /* BLOG PAGE */
@@ -942,19 +942,19 @@ article .social-links a {
           flex: 1 0 40%;
 }
 
-.article-info div:first-child img {
-  height: 80px;
-  width: 80px;
-  margin-right: 30px;
-  border-radius: 50%;
-}
-
 .article-info div:not(:first-of-type) {
   min-width: 200px;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 20%;
           flex: 1 1 20%;
   padding: 5px 0;
+}
+
+.article-info img {
+  height: 80px;
+  width: 80px;
+  margin-right: 30px;
+  border-radius: 50%;
 }
 
 .article-text {
@@ -987,20 +987,20 @@ article .social-links a {
   transition: all 0.3s;
 }
 
-.related-posts li p {
-  margin-top: 10px;
-}
-
-.related-posts li div {
-  height: 500px;
-}
-
-.related-posts li:hover {
+.related-posts li:focus, .related-posts li:hover {
   opacity: 0.7;
 }
 
 .related-posts li:not(:last-of-type) {
   margin-right: 1%;
+}
+
+.related-posts div {
+  height: 500px;
+}
+
+.related-posts p {
+  margin-top: 10px;
 }
 
 .comments-section {
@@ -1307,9 +1307,12 @@ fieldset {
     padding: 100px 30px;
   }
   .team-container {
-    grid-auto-rows: 150px;
+    grid-auto-rows: 200px;
     -ms-grid-columns: (45%)[auto-fit];
         grid-template-columns: repeat(auto-fit, 45%);
+  }
+  .team-txt-1 {
+    line-height: 1.8rem;
   }
   .portfolio-section {
     -webkit-box-orient: vertical;
@@ -1353,6 +1356,7 @@ fieldset {
   }
 }
 
+/* For mobile screens */
 @media (max-width: 480px) {
   .logo {
     font-size: 2.6rem;
@@ -1375,6 +1379,9 @@ fieldset {
   .product-gallery img {
     width: 225px;
     height: 225px;
+  }
+  .team-container {
+    grid-auto-rows: 150px;
   }
   .team-txt-1 {
     padding: 20px;
@@ -1410,5 +1417,3 @@ fieldset {
     padding: 20px 0;
   }
 }
-
-/* For mobile screens */
